@@ -51,7 +51,7 @@ setOldClass("data.frame")      ## to appease setMethod's signature warnings...
 ##
 setClass("MySQLObject", 
   contains = c("DBIObject", "VIRTUAL"),
-  slots = list(Id = "integer")
+  representation = list(Id = "integer")
 )
 
 ## coercion methods 
